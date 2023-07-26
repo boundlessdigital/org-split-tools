@@ -67,7 +67,18 @@ orgsplit tools can be installed as a package from this git repository.  Note tha
 
 Installing to a Python Virtual Environment is highly reccomended but not required.
 
+Org Split Tools can be installed from this git repo using the following command:
+```
+pip install "git+https://github.com/zabrewer/org-split-tools"
+```
 
+After successful installation, use the following command:
+
+```
+orgsplit
+```
+
+If successful, you should see the help output.
 
 ## Changelog
 
