@@ -1,0 +1,29 @@
+[project]
+name = 'orgsplit'
+version = '0.1.0'
+description = 'A CLI suite of tools used to support Meraki Organization splits.'
+readme = 'README.md'
+requires-python = '>=3.8'
+authors = [
+    { name = 'Zach Brewer'},
+]
+keywords = [
+    'meraki',
+]
+dependencies = [
+    'click~=8.1',
+    'meraki~=1.30.0',
+    'prettytable~=3.8.0',
+    'tqdm~=4.65.0'
+]
+license = {file = 'LICENSE.txt'}
+
+[project.scripts]
+orgsplit = 'orgsplit_tools.orgsplit:entry_point'
+
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools]
+packages = ['orgsplit_tools', 'orgsplit_tools.merakilib', 'orgsplit_tools.subcommands']
