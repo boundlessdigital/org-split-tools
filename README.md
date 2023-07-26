@@ -78,7 +78,7 @@ After successful installation, use the following command:
 orgsplit
 ```
 
-If successful, you should see the help output.
+If successful, you should see the help option output above.
 
 ## Changelog
 
