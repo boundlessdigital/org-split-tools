@@ -15,7 +15,7 @@ Various flags and options reviewed by using the help flag following any command,
 orgsplit.py -h
 ```
 
-which outputs the following:
+...which outputs the following:
 
 ```
 Usage: orgsplit.py [OPTIONS] COMMAND [ARGS]...
