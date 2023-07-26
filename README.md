@@ -36,7 +36,7 @@ Commands:
   rename        Replaces part or all of a network name in one or more...
 ```
 
-You can also use the -h command for a given subcommand:
+You can also use the -h option for a given subcommand:
 ```
 python orgsplit.py device-count -h
 ```
