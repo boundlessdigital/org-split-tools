@@ -10,7 +10,7 @@ There are four operations supported today in each of the following commands:
 * **recombine** - A command to re-combine networks on a child org post organization split
 * **rename** - A command that supports finding and replacing given strings in network names.  Commonly used to rename the networks to match a new naming convention in a child org (post org-split)
 
-Various flags and options reviewed by using the help flag following any command, e.g.
+Various flags and options can be reviewed by using the help flag following any command, e.g.
 ```
 orgsplit.py -h
 ```
