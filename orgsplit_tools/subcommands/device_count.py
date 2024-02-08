@@ -38,7 +38,7 @@ def clean_orgs(all_orgs, org_name):
     
     cleaned_orgs = []
     for org in all_orgs:
-        if org['name'].lower() == user_org:
+        if org['name'].lower().strip() == user_org:
             cleaned_orgs.append(org)
 
     if cleaned_orgs:

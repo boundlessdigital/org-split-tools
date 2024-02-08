@@ -3,8 +3,7 @@ import itertools
 import click
 import meraki
 
-from orgsplit_tools.merakilib import get_appliance
-from orgsplit_tools.merakilib import get_networks
+from orgsplit_tools.merakilib import get_appliance, get_networks
 
 
 class CallDashboard(object):
@@ -44,9 +43,13 @@ def clean_orgs(all_orgs, org_name):
     
     cleaned_orgs = []
     for org in all_orgs:
-        if org['name'].lower() == user_org:
+        if org['name'].lower().strip() == user_org:
             cleaned_orgs.append(org)
+ 
 
+            
+
+    print(f'cleaned_orgs: {cleaned_orgs}')
     if cleaned_orgs:
         return cleaned_orgs
 

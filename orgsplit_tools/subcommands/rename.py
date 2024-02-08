@@ -1,12 +1,12 @@
-import time
 import json
+import time
 
 import click
 import meraki
 from prettytable import PrettyTable
 
-from orgsplit_tools.merakilib import get_networks
-from orgsplit_tools.merakilib import update_networks
+from orgsplit_tools.merakilib import get_networks, update_networks
+
 
 class CallDashboard(object):
     def __init__(self, apikey, debug, cert_path=None):
@@ -42,7 +42,7 @@ def clean_orgs(all_orgs, org_name):
     
     cleaned_orgs = []
     for org in all_orgs:
-        if org['name'].lower() == user_org:
+        if org['name'].lower().strip() == user_org:
             cleaned_orgs.append(org)
 
     if cleaned_orgs:
